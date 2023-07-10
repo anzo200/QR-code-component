@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap');
+
+/* * { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+
+:root{
+/* colors */
+  --clr-cream:hsl(30, 38%, 92%);
+  --clr-Dark-cyan: hsl(158, 36%, 37%);
+  --clr-Very-dark-blue: hsl(212, 21%, 14%);
+  --clr-Dark-grayish-blue: hsl(228, 12%, 48%);
+  --clr-White: hsl(0, 0%, 100%);
+  /* fonts */
+  --font-Fraunces: 'Fraunces', serif;
+  --font-Montserrat: 'Montserrat', sans-serif;
+}
+
+body{
+background-color: var(--clr-cream);
+min-height: 100vh;
+display: grid;
+place-content: center ;
+
+}
+
+.prodecte{
+  background-color: var(--clr-White);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 550px;
+  margin: 1rem;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+img{
+  display: block;
+  width: 100%;
+  background-image: cover;
+}
+
+.content{
+  margin: 30px ;
+
+}
+
+.prodecte__discription{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+  color: var(--clr-Dark-grayish-blue);
+}
+.prodecte__categore{
+  color: var(--clr-Dark-grayish-blue);
+  font-size: 14px;
+}
+
+.perfume{
+  color: var(--clr-Dark-grayish-blue);
+  font-family: var(--font-Montserrat);
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 5px;
+}
+
+.titel{
+  font-family: var(--font-Fraunces);
+  font-size: 30px ;
+  line-height: 30px;
+}
+
+.prices{
+  display: flex;
+  margin: 0;
+}
+
+.price{
+  font-family: var(--font-Fraunces);
+  font-size: 30px;
+  padding-right: 20px;
+  margin: 0;
+  color: var(--clr-Dark-cyan);
+}
+
+.last_price{
+  font-family: var(--font-Montserrat);
+  color: var(--clr-Dark-grayish-blue);
+  font-size: 12px;
+  text-decoration: line-through;
+}
+
+.button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  padding: 15px;
+  width: 100%;
+  border-radius: 8px;
+  border: none;
+  background-color: var(--clr-Dark-cyan);
+  color: var(--clr-White);
+  font-weight: 700;
+  text-align: center;
+}
+
+.button::before {
+    content: "";
+    width: 15px;
+    height: 16px;
+    background: url("./images/icon-cart.svg");
+    margin-right: 10px;
+}
+@media (max-width:700px) {
+  .prodecte{
+    grid-template-columns: 1fr ;
+  }
+  
+}
+
+
+
+
+
